@@ -9,7 +9,7 @@
      <link href="resources/css/style.css" rel="stylesheet"/>
      <link href="resources/css/bootstrap.css" rel="stylesheet"/>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>ng-include example</title>
 </head>
 <body ng-app="myModule">
 		<div ng-controller="myController"></br></br/>
@@ -18,7 +18,13 @@
 			<input type="checkbox" ng-model="hide">Hide DOB
 			<input type="checkbox" ng-model="show">Show City
 			<br/><br/>
-			<div ng-include="'resources/jsps/empTable.jsp'"></div>
+			Select View
+				<select ng-model="selectView">
+					<option value="resources/jsps/empTable.jsp" selected="selected">Table</option>
+					<option value="resources/jsps/empList.jsp">List</option>
+				</select>
+<!-- 			<div ng-include="'resources/jsps/empTable.jsp'"></div> -->
+	<div ng-include="selectView"></div>
 		</div>
 			
 </body>
