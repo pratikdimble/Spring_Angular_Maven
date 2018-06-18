@@ -13,7 +13,7 @@
 </head>
 <body ng-app="myModule">
 		<div ng-controller="myController"></br></br/>
-			Search<input type="text" plceholder="search employee" ng-model="searchText"><br/><br/>
+			Search<input type="text" plceholder="search employee" ng-model="searchText.name"><br/><br/>
 			<table>
 				<thead>
 					<tr>
