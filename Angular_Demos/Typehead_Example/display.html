@@ -1,0 +1,21 @@
+<div class="container">
+    <div ng-controller="mainCtrl" class="row-fluid">
+        <form class="row-fluid">
+       
+            <div class="container-fluid"></br></br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;   Typehead Example </br>
+                Enter Area &nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" ng-model="selPcode" placeholder="Search Area"
+                  typeahead="state.postcode as state.address for state in states | filter:$viewValue"
+                  typeahead-on-select="setPcode($item)"
+                  typeahead-editable="false" />
+                   </br>
+          Pincode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" ng-model="selPcode" placeholder="Pincode"/> </br>
+          TYPEHEAD-ON-SELECT
+            <input type="text" ng-model="setId" placeholder="typeahead-on-select"/>
+            </div>
+        </form>
+    </div>
+</div>
